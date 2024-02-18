@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            padding: 10px;
+            border: 2px solid #000;
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        .grid-item {
+            padding: 20px;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            background-color: #888;
+        }
+
+        .box1 {
+            background-color: #f88;
+        }
+
+        .box2 {
+            background-color: #88f;
+        }
+
+        .box3 {
+            grid-column: 1 / -1;
+            background-color: #ff8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item header">Mock 1</div>
+        <div class="grid-item box1">1</div>
+        <div class="grid-item box2">2</div>
+        <div class="grid-item box1">3</div> <!-- Second row red box -->
+        <div class="grid-item box2">4</div> <!-- Second row blue box -->
+        <div class="grid-item box1">5</div> <!-- Third row red box -->
+        <div class="grid-item box2">6</div> <!-- Third row blue box -->
+        <div class="grid-item box3">5</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+/* Universal selector (*) applies these styles to all elements in the document. */
+* {
+    margin: 0px;
+    /* Removes the default margin from all elements. */
+    padding: 0px;
+    /* Removes the default padding from all elements. */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Sets the default font family for text in all elements. */
+    box-sizing: border-box;
+    /* Changes the box model to include padding and border in the element's total width and height. */
+    user-select: none;
+    /* Prevents text in elements from being selectable. */
+}
+
+body {
+    height: 100vh;
+    /* Sets the height of the body to be 100% of the viewport height. */
+    Background: #240046;
+    /* Sets the background color of the body. */
+    display: grid;
+    /* Sets the display mode of the body to grid layout. */
+}
+
+.container {
+    width: 100%;
+    /* Sets the width of the container to 100% of its parent element. */
+
+    height: 100%;
+    /* Sets the height of the container to 100% of its parent element. */
+
+    display: flex;
+    /* Sets the display mode of the container to flex layout. */
+}
+
+.calculator {
+    background: #023e7d;
+    /* Sets the background color of the calculator. */
+    padding: 10px;
+    /* Adds padding around the content of the calculator. */
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.219);
+    /* Adds a shadow effect around the calculator. */
+    margin: auto;
+    /* Centers the calculator horizontally within its parent container. */
+
+    border-radius: 10px;
+    /* Rounds the corners of the calculator. */
+}
+
+.calculator form input {
+    border: 0;
+    /* Removes the border from the input elements. */
+    outline: 0;
+    /* Removes the outline from the input elements. */
+    width: 60px;
+    /* Sets the width of the input elements. */
+    height: 60px;
+    /* Sets the height of the input elements. */
+    border-radius: 10px;
+    /* Rounds the corners of the input elements. */
+    font-family: Nunito;
+    /* Sets the font family of the text in the input elements. */
+    font-weight: 700;
+    /* Sets the font weight of the text in the input elements. */
+    font-size: 1.7em;
+    /* Sets the font size of the text in the input elements. */
+    color: white;
+    /* Sets the text color of the input elements. */
+    cursor: pointer;
+    /* Changes the cursor to a pointer when hovering over the input elements. */
+    margin: 10px;
+    /* Adds margin around the input elements. */
+
+}
+
+.calculator form input.number {
+    background: #012a4a;
+    /* Sets the background color of the number buttons. */
+}
+
+.calculator form input.operator,
+.calculator form input.symbol {
+    background: #edae49;
+    /* Sets the background color of the operator and symbol buttons. */
+}
+
+form .display {
+    display: flex;
+    /* Sets the display mode of the display container to flex layout. */
+    justify-content: flex-end;
+    /* Aligns the items in the display container to the end of the main axis. */
+    margin: 20px 0;
+    /* Adds top and bottom margin to the display container. */
+}
+
+form .display input {
+    text-align: right;
+    /* Aligns the text to the right within the input element. */
+    flex: 2;
+    /* Allows the input element to grow to fill the available space, with a flex-grow factor of 2. */
+    font-size: 45px;
+    /* Sets the font size of the text in the input element. */
+    box-shadow: none;
+    /* Removes any box shadow from the input element. */
+    padding: 20px;
+    /* Adds padding around the content of the input element. */
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height. */
+    background: #218380;
+    /* Sets the background color of the input element. */
+    box-shadow: 0 0 10px 3px #00000033;
+    /* Adds a shadow effect around the input element. */
+    height: 80px;
+    /* Sets the height of the input element. */
+    color: white;
+    /* Sets the text color of the input element. */
+}
+
+form input.equal {
+    width: 145px;
+    /* Sets the width of the equal button. */
+    background: #005f08;
+    /* Sets the background color of the equal button. */
+}
+
+form input.ac,
+form input.del {
+    background: #5f0000;
+    /* Sets the background color of the AC and Del buttons. */
+}
+
+.calculator form input.special {
+    background: #248277;
+    /* Sets the background color of the special buttons. */
+}
+
+.calculator form input:hover {
+    box-shadow: 0px 0px 5px 3px #00000025;
+    /* Adds a shadow effect around the input elements when hovered. */
+}

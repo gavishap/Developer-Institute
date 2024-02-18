@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" id="display" disabled>
+                </div>
+                <div>
+                    <!-- <input type="button" value="AC" onclick="clearDisplay()" class="ac"> -->
+                    <input type="button" value="AC" class="ac">
+                    <!-- <input type="button" value="Del" onclick="deleteLast()" class="del"> -->
+                    <input type="button" value="Del" class="del">
+                    <!-- <input type="button" value="." onclick="appendToDisplay('.')" class="symbols"> -->
+                    <input type="button" value="." class="symbol">
+                    <!-- <input type="button" value="/" onclick="appendToDisplay('/')" class="symbols"> -->
+                    <input type="button" value="/" class="operator">
+                </div>
+                <div>
+                    <!-- <input type="button" value="7" onclick="appendToDisplay('7')" class="NumpadBtns"> -->
+                    <input type="button" value="7" class="number">
+                    <!-- <input type="button" value="8" onclick="appendToDisplay('8')" class="NumpadBtns"> -->
+                    <input type="button" value="8" class="number">
+                    <!-- <input type="button" value="9" onclick="appendToDisplay('9')" class="NumpadBtns"> -->
+                    <input type="button" value="9" class="number">
+                    <!-- <input type="button" value="*" onclick="appendToDisplay('*')" class="symbols"> -->
+                    <input type="button" value="*" class="operator">
+                </div>
+                <div>
+                    <!-- <input type="button" value="4" onclick="appendToDisplay('4')" class="NumpadBtns"> -->
+                    <input type="button" value="4" class="number">
+                    <!-- <input type="button" value="5" onclick="appendToDisplay('5')" class="NumpadBtns"> -->
+                    <input type="button" value="5" class="number">
+                    <!-- <input type="button" value="6" onclick="appendToDisplay('6')" class="NumpadBtns"> -->
+                    <input type="button" value="6" class="number">
+                    <!-- <input type="button" value="-" onclick="appendToDisplay('-')" class="symbols"> -->
+                    <input type="button" value="-" class="operator">
+                </div>
+                <div>
+                    <!-- <input type="button" value="1" onclick="appendToDisplay('1')" class="NumpadBtns"> -->
+                    <input type="button" value="1" class="number">
+                    <!-- <input type="button" value="2" onclick="appendToDisplay('2')" class="NumpadBtns"> -->
+                    <input type="button" value="2" class="number">
+                    <!-- <input type="button" value="3" onclick="appendToDisplay('3')" class="NumpadBtns"> -->
+                    <input type="button" value="3" class="number">
+                    <!-- <input type="button" value="+" onclick="appendToDisplay('+')" class="symbols"> -->
+                    <input type="button" value="+" class="operator">
+                </div>
+                <div>
+                    <!-- <input type="button" value="00" onclick="appendToDisplay('00')" class="special"> -->
+                    <input type="button" value="00" class="number special">
+                    <!-- <input type="button" value="0" onclick="appendToDisplay('0')" class="special"> -->
+                    <input type="button" value="0" class="number special">
+                    <!-- <input type="button" value="=" onclick="calculateResult()" class="equal"> -->
+                    <input type="button" value="=" class="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
