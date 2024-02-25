@@ -11,7 +11,7 @@ setInterval(() => {
     // Convert hour to 12-hour format
     hour = hour % 12;
     // If hour is 0 (midnight or noon), set it to 12
-    hour = hour ? hour : 12; // the hour '0' should be '12'
+    hour = (hour)? hour : 12; // the hour '0' should be '12'
     
     // Add leading zero to single-digit hours, minutes, and seconds for uniformity
     hour = (hour < 10) ? `0${hour}` : hour;

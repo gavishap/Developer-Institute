@@ -1,0 +1,35 @@
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  background-color: blue;
+  padding: 5px;
+  gap: 5px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden; /* Ensure discs don't show outside the cells */
+}
+
+.disc {
+  background-color: red; /* Default color, will be overridden by player class */
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -100%; /* Start above the cell */
+  transition: top 0.5s ease-in; /* Smooth transition for the drop */
+}
+
+.player1 {
+  background-color: red;
+}
+
+.player2 {
+  background-color: yellow;
+}
